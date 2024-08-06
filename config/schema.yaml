@@ -1,0 +1,50 @@
+columns:
+  - id: int64
+  - gender: object
+  - age: float64
+  - hypertension: int64
+  - heart_disease: int64
+  - ever_married: object
+  - work_type: object
+  - Residence_type: object
+  - avg_glucose_level: float64
+  - bmi: float64
+  - smoking_status: object
+  - stroke: int64
+
+numerical_columns:
+  - id
+  - age
+  - hypertension
+  - heart_disease
+  - avg_glucose_level
+  - bmi
+  - stroke
+
+categorical_columns:
+  - gender
+  - ever_married
+  - work_type
+  - Residence_type
+  - smoking_status
+
+drop_columns:
+  - id
+
+# for data transformation
+num_features:
+  - age
+  - avg_glucose_level
+  - bmi
+
+oh_columns:
+  - gender
+  - ever_married
+  - work_type
+  - Residence_type
+  - smoking_status
+
+# for power transform
+transform_columns:
+  - avg_glucose_level
+  - bmi
