@@ -13,3 +13,13 @@ class DataValidationArtifact:
     message: str
     report_file_path: str
 
+@dataclass
+class DataTransformationArtifact:
+    transformed_train_path: str
+    transformed_test_path: str
+    preprocessor_object_path: str
+
+@dataclass
+class ModelTrainerArtifact:
+    trained_model_file_path: str
+    report_artifact: str

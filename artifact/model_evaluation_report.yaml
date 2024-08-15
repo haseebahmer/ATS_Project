@@ -1,0 +1,10 @@
+accuracy: 0.9231898238747553
+best_model: KNeighborsClassifier
+confusion_matrix:
+- - 1802
+  - 139
+- - 18
+  - 85
+f1_score: 0.9361653011180648
+precision: 0.9593386096535559
+recall: 0.9231898238747553
